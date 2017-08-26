@@ -13,7 +13,7 @@ public class JdbcUtils {
 	private static String driver="oracle.jdbc.driver.OracleDriver";
 	private static String url="jdbc:oracle:thin:@localhost:1521:orcl";
 	private static String user="scott";
-	private static String password="123456";
+	private static String password="1234567";
 	
 	static{
 		try {
@@ -27,7 +27,7 @@ public class JdbcUtils {
 		try {
 			return DriverManager.getConnection(url,user,password);
 		} catch (SQLException e) {
-			e.printStackTrace();
+			e.printStackTrace(); 
 		}
 		return null;
 	}
